@@ -8,7 +8,6 @@ import { UserReadController } from './controllers/users/UserReadController';
 
 const routes = Router();
 
-//routes.post('/teste', new UserRegisterController().handle);
 
 routes.get('/users', new UsersReadController().handle);
 routes.get('/user/:id', new UserReadController().handle);
