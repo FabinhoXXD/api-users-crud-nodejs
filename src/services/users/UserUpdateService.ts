@@ -27,10 +27,14 @@ class UserUpdateService {
             where:{email:email},
             data:dataToUpdate,
             select:{
+                id:true,
                 name:true,
-                email:true
+                email:true,
+                createdAt:true,
+                updatedAt:true
             }
         })
+
 
         return updateUser;
     }
